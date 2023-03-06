@@ -17,6 +17,10 @@
 		3751E1E729B48A3D004E88BB /* soundButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1E629B48A3D004E88BB /* soundButton.png */; };
 		3751E1E929B49145004E88BB /* wrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1E829B49145004E88BB /* wrongAnswer.mp3 */; };
 		3751E1EB29B58E18004E88BB /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1EA29B58E18004E88BB /* checkbox.png */; };
+		3751E1ED29B5C342004E88BB /* blueframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1EC29B5C342004E88BB /* blueframe.png */; };
+		3751E1EF29B5C35C004E88BB /* yellowframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1EE29B5C35C004E88BB /* yellowframe.png */; };
+		3751E1F129B5C36B004E88BB /* redframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1F029B5C36A004E88BB /* redframe.png */; };
+		3751E1F329B5C377004E88BB /* greenframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3751E1F229B5C377004E88BB /* greenframe.png */; };
 		37D44DED29B3DD3D00F6317E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D44DEC29B3DD3D00F6317E /* AppDelegate.swift */; };
 		37D44DEF29B3DD3D00F6317E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D44DEE29B3DD3D00F6317E /* SceneDelegate.swift */; };
 		37D44DF129B3DD3D00F6317E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D44DF029B3DD3D00F6317E /* HomeViewController.swift */; };
@@ -36,6 +40,10 @@
 		3751E1E629B48A3D004E88BB /* soundButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soundButton.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/soundButton.png; sourceTree = "<group>"; };
 		3751E1E829B49145004E88BB /* wrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrongAnswer.mp3; path = ../../../BeeMoo/teach_me_plurals/app_assets/wrongAnswer.mp3; sourceTree = "<group>"; };
 		3751E1EA29B58E18004E88BB /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/checkbox.png; sourceTree = "<group>"; };
+		3751E1EC29B5C342004E88BB /* blueframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueframe.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/blueframe.png; sourceTree = "<group>"; };
+		3751E1EE29B5C35C004E88BB /* yellowframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellowframe.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/yellowframe.png; sourceTree = "<group>"; };
+		3751E1F029B5C36A004E88BB /* redframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redframe.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/redframe.png; sourceTree = "<group>"; };
+		3751E1F229B5C377004E88BB /* greenframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenframe.png; path = ../../../BeeMoo/teach_me_plurals/app_assets/greenframe.png; sourceTree = "<group>"; };
 		37D44DE929B3DD3D00F6317E /* HeSheThey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeSheThey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D44DEC29B3DD3D00F6317E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D44DEE29B3DD3D00F6317E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		3751E1D329B3F50C004E88BB /* app_assets */ = {
 			isa = PBXGroup;
 			children = (
+				3751E1F229B5C377004E88BB /* greenframe.png */,
+				3751E1F029B5C36A004E88BB /* redframe.png */,
+				3751E1EE29B5C35C004E88BB /* yellowframe.png */,
+				3751E1EC29B5C342004E88BB /* blueframe.png */,
 				3751E1EA29B58E18004E88BB /* checkbox.png */,
 				3751E1E829B49145004E88BB /* wrongAnswer.mp3 */,
 				3751E1E629B48A3D004E88BB /* soundButton.png */,
@@ -173,12 +185,16 @@
 			files = (
 				3751E1EB29B58E18004E88BB /* checkbox.png in Resources */,
 				3751E1D529B3F526004E88BB /* BEEMOO.png in Resources */,
+				3751E1ED29B5C342004E88BB /* blueframe.png in Resources */,
 				3751E1E529B48A1B004E88BB /* listeningMan.png in Resources */,
 				37D44DF929B3DD3F00F6317E /* LaunchScreen.storyboard in Resources */,
 				37D44DF629B3DD3F00F6317E /* Assets.xcassets in Resources */,
 				3751E1E929B49145004E88BB /* wrongAnswer.mp3 in Resources */,
+				3751E1F329B5C377004E88BB /* greenframe.png in Resources */,
 				37D44DF429B3DD3D00F6317E /* Main.storyboard in Resources */,
 				3751E1DD29B42607004E88BB /* bluehome.png in Resources */,
+				3751E1F129B5C36B004E88BB /* redframe.png in Resources */,
+				3751E1EF29B5C35C004E88BB /* yellowframe.png in Resources */,
 				3751E1E329B48A0B004E88BB /* instructions.wav in Resources */,
 				3751E1E729B48A3D004E88BB /* soundButton.png in Resources */,
 			);

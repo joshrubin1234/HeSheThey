@@ -21,37 +21,64 @@ class MenuViewController: UIViewController {
         let buttonWidth = (self.view.frame.width - 180) / 2
         let buttonHeight = (self.view.frame.height - 120) / 2
         
-        let topLeftButton = UIButton(frame: CGRect(x: 85, y: 60, width: buttonWidth, height: buttonHeight))
-        topLeftButton.setTitle("Flashcards", for: .normal)
-        topLeftButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Regular", size: 20)
-        topLeftButton.setTitleColor(.black, for: .normal)
-        topLeftButton.backgroundColor = .purple
-        self.view.addSubview(topLeftButton)
+        let topLeft = UIImageView(frame: CGRect(x: -247 + buttonWidth, y: -75 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        topLeft.image = UIImage(named: "blueframe")
+        topLeft.isUserInteractionEnabled = true
+        self.view.addSubview(topLeft)
+
+        let labelTL = UILabel(frame: CGRect(x: 150, y: -75 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        labelTL.text = "Flashcards"
+        labelTL.font = UIFont(name: "ChalkboardSE-Regular", size: 45)
+        labelTL.textColor = .black
+        self.view.addSubview(labelTL)
         
         
-        let topRightButton = UIButton(frame: CGRect(x: 95 + buttonWidth, y: 60, width: buttonWidth, height: buttonHeight))
-        topRightButton.setTitle("Game", for: .normal)
-        topRightButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Regular", size: 20)
-        topRightButton.setTitleColor(.black, for: .normal)
-        topRightButton.backgroundColor = .green
-        topRightButton.addTarget(self, action: #selector(toGame), for: .touchUpInside)
-        self.view.addSubview(topRightButton)
+        let topRight = UIImageView(frame: CGRect(x: 95 + buttonWidth, y: -75 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        topRight.image = UIImage(named: "greenframe")
+        topRight.isUserInteractionEnabled = true
+        self.view.addSubview(topRight)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(toGame))
+        topRight.addGestureRecognizer(tapGestureRecognizer)
+        
+
+        let labelTR = UILabel(frame: CGRect(x: 530, y: -75 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        labelTR.text = "Game"
+        labelTR.font = UIFont(name: "ChalkboardSE-Regular", size: 45)
+        labelTR.textColor = .black
+        self.view.addSubview(labelTR)
+        
+        
+        
 
         
-        let bottomLeftButton = UIButton(frame: CGRect(x: 85, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
-        bottomLeftButton.setTitle("Menu", for: .normal)
-        bottomLeftButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Regular", size: 20)
-        bottomLeftButton.setTitleColor(.black, for: .normal)
-        bottomLeftButton.backgroundColor = .blue
-        self.view.addSubview(bottomLeftButton)
+       
+        let bottomLeft = UIImageView(frame: CGRect(x: 85, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        bottomLeft.image = UIImage(named: "yellowframe")
+        bottomLeft.isUserInteractionEnabled = true
+
+        self.view.addSubview(bottomLeft)
+
+        let labelBL = UILabel(frame: CGRect(x: 200, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        labelBL.text = "Menu"
+        labelBL.font = UIFont(name: "ChalkboardSE-Regular", size: 45)
+        labelBL.textColor = .black
+        self.view.addSubview(labelBL)
+             
         
-        let bottomRightButton = UIButton(frame: CGRect(x: 95 + buttonWidth, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
-        bottomRightButton.setTitle("About", for: .normal)
-        bottomRightButton.titleLabel?.font = UIFont(name: "ChalkboardSE-Regular", size: 20)
-        bottomRightButton.setTitleColor(.black, for: .normal)
-        bottomRightButton.backgroundColor = .brown
-        bottomRightButton.addTarget(self, action: #selector(toAbout), for: .touchUpInside)
-        self.view.addSubview(bottomRightButton)
+        
+        let bottomRight = UIImageView(frame: CGRect(x: 95 + buttonWidth, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        bottomRight.image = UIImage(named: "redframe")
+        bottomRight.isUserInteractionEnabled = true
+        self.view.addSubview(bottomRight)
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(toAbout))
+        bottomRight.addGestureRecognizer(tapGestureRecognizer1)
+        
+
+        let labelBR = UILabel(frame: CGRect(x: 530, y: 70 + buttonHeight, width: buttonWidth, height: buttonHeight))
+        labelBR.text = "About"
+        labelBR.font = UIFont(name: "ChalkboardSE-Regular", size: 45)
+        labelBR.textColor = .black
+        self.view.addSubview(labelBR)
         
     }
     
